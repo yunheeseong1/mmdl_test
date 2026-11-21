@@ -1,5 +1,7 @@
 # Qwen3-VL-4B MMMU 평가
 
+> **MMMU Test 10,500문항 · 학습 모델 · seed 42 평가:** [`mmmu_test_eval/README.md`](mmmu_test_eval/README.md)를 따르세요. `mmm_test` 브랜치에는 AIX-408-06에서 사용한 Test 생성·채점 코드, 고정 환경, 학교 컨테이너 실행 방법과 결과 검증이 추가되어 있습니다. 아래 본문과 `src/`는 기존 validation 900문항용입니다.
+
 **두 번 말하게 하지마** 팀의 Qwen3-VL-4B-Instruct MMMU validation 평가 저장소입니다. 환경 준비와 900문항 평가를 제공하며, 학습한 체크포인트도 같은 설정으로 평가할 수 있습니다. 현재 학습·LoRA 병합 코드는 포함하지 않습니다.
 
 평가 흐름: **모델 추론 → 최종 답 추출 → 공식 규칙 fallback → 필요한 문항의 로컬 Qwen3-8B 저지 → 결과 저장**.
